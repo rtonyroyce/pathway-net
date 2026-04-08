@@ -1029,11 +1029,11 @@ warnings.filterwarnings('ignore')
 #   CONSTANTS
 # ─────────────────────────────────────────────
 FILE_PATHS = {
-    'mutation':     'mutations_summary_20250318.csv',
-    'drug':         'GDSC1_fitted_dose_response_27Oct23.xlsx',
-    'gmt_hallmark': 'h_all_v7_x_symbols_gmt.txt',
-    'gmt_kegg':     'c2_cp_kegg_v7_x_symbols_gmt.txt',
-    'descriptions': 'description_separated.xlsx',
+    'mutation':     'mutations.csv',
+    'drug':         'GDSC.xlsx',
+    'gmt_hallmark': 'hall.gmt.txt',
+    'gmt_kegg':     'kegg.gmt.txt',
+    'descriptions': 'description.xlsx',
 }
 
 TCGA_NAMES = {
