@@ -1029,11 +1029,11 @@ warnings.filterwarnings('ignore')
 #   CONSTANTS
 # ─────────────────────────────────────────────
 FILE_PATHS = {
-    'mutation':     '/Users/roycer/Documents/data/mutations_summary_20250318.csv',
-    'drug':         '/Users/roycer/Documents/data/GDSC1_fitted_dose_response_27Oct23.xlsx',
-    'gmt_hallmark': '/Users/roycer/Documents/data/h.all.v7.x.symbols.gmt.txt',
-    'gmt_kegg':     '/Users/roycer/Documents/data/c2.cp.kegg.v7.x.symbols.gmt.txt',
-    'descriptions': '/Users/roycer/Documents/data/description_separated.xlsx',
+    'mutation':     'mutations.csv',
+    'drug':         'GDSC.xlsx',
+    'gmt_hallmark': 'hall.gmt.txt',
+    'gmt_kegg':     'kegg.gmt.txt',
+    'descriptions': 'description.xlsx',
 }
 
 TCGA_NAMES = {
