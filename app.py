@@ -31,19 +31,19 @@ st.markdown("""
 
 /* ── BASE ───────────────────────────────── */
 html, body, .stApp {
-    background: #070c18 !important;
-    color: #dde4f0;
+    background: #f5f3f0 !important;
+    color: #2c2c2c;
     font-family: 'Inter', sans-serif;
 }
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #080e1c 0%, #0b1325 100%) !important;
-    border-right: 1px solid #131f38;
+    background: #eeece8 !important;
+    border-right: 1px solid #dddad5;
 }
-hr { border-color: #131f38 !important; }
+hr { border-color: #dddad5 !important; }
 
 /* ── TYPOGRAPHY ─────────────────────────── */
 h1,h2,h3,h4,h5,h6 {
-    color: #5b9cf6 !important;
+    color: #3d5a80 !important;
     font-family: 'JetBrains Mono', monospace !important;
     letter-spacing: 0.3px;
 }
@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 .sidebar-brand {
     padding: 18px 0 22px 0;
     text-align: center;
-    border-bottom: 1px solid #131f38;
+    border-bottom: 1px solid #dddad5;
     margin-bottom: 22px;
 }
 .brand-icon { font-size: 2em; margin-bottom: 6px; }
@@ -60,12 +60,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.3em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     letter-spacing: 1px;
 }
 .brand-version {
     font-size: 0.62em;
-    color: #2d4266;
+    color: #9a9390;
     letter-spacing: 3.5px;
     text-transform: uppercase;
     margin-top: 3px;
@@ -75,18 +75,18 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 0.65em;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 8px;
 }
 .drug-badge {
-    background: rgba(91,156,246,0.06);
-    border: 1px solid rgba(91,156,246,0.16);
-    border-left: 3px solid #5b9cf6;
+    background: rgba(61,90,128,0.06);
+    border: 1px solid rgba(61,90,128,0.18);
+    border-left: 3px solid #3d5a80;
     border-radius: 8px;
     padding: 10px 14px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78em;
-    color: #7fb3fa;
+    color: #3d5a80;
     word-break: break-word;
     margin: 8px 0 0 0;
     line-height: 1.5;
@@ -94,9 +94,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /* ── BUTTONS ────────────────────────────── */
 div[data-testid="stButton"] > button {
-    background: linear-gradient(135deg, #1a47c4 0%, #163aaa 100%);
-    color: #e8eeff;
-    border: 1px solid #3b6de8;
+    background: #3d5a80;
+    color: #f5f3f0;
+    border: 1px solid #2e4460;
     border-radius: 10px;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
@@ -108,20 +108,20 @@ div[data-testid="stButton"] > button {
     font-size: 0.82em;
 }
 div[data-testid="stButton"] > button:hover {
-    background: linear-gradient(135deg, #2356db, #1a47c4);
-    box-shadow: 0 0 28px rgba(59,109,232,0.4);
-    border-color: #7fb3fa;
+    background: #2e4460;
+    box-shadow: 0 2px 12px rgba(61,90,128,0.18);
+    border-color: #3d5a80;
 }
 
 /* ── METRICS ────────────────────────────── */
 div[data-testid="stMetricValue"] {
-    color: #34d399 !important;
+    color: #4a8c6f !important;
     font-family: 'JetBrains Mono', monospace !important;
     font-size: 1.85em !important;
     font-weight: 700 !important;
 }
 div[data-testid="stMetricLabel"] {
-    color: #2d4266 !important;
+    color: #9a9390 !important;
     font-family: 'JetBrains Mono', monospace !important;
     font-size: 0.68em !important;
     letter-spacing: 2px;
@@ -130,7 +130,7 @@ div[data-testid="stMetricLabel"] {
 
 /* ── PROGRESS ───────────────────────────── */
 .stProgress > div > div > div > div {
-    background: linear-gradient(90deg, #1a47c4, #5b9cf6, #34d399) !important;
+    background: linear-gradient(90deg, #3d5a80, #7ba7bc, #4a8c6f) !important;
 }
 
 /* ── PAGE HEADER ────────────────────────── */
@@ -138,9 +138,9 @@ div[data-testid="stMetricLabel"] {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(52,211,153,0.06);
-    border: 1px solid rgba(52,211,153,0.18);
-    color: #34d399;
+    background: rgba(74,140,111,0.07);
+    border: 1px solid rgba(74,140,111,0.22);
+    color: #4a8c6f;
     border-radius: 30px;
     padding: 5px 16px;
     font-size: 0.68em;
@@ -152,20 +152,20 @@ div[data-testid="stMetricLabel"] {
 .pulse-dot {
     width: 7px; height: 7px;
     border-radius: 50%;
-    background: #34d399;
-    box-shadow: 0 0 8px #34d399;
+    background: #4a8c6f;
+    box-shadow: 0 0 6px rgba(74,140,111,0.5);
     animation: pulseAnim 2s ease-in-out infinite;
     flex-shrink: 0;
 }
 @keyframes pulseAnim {
-    0%,100% { opacity:1; box-shadow: 0 0 8px #34d399; }
-    50% { opacity:0.25; box-shadow: none; }
+    0%,100% { opacity:1; }
+    50% { opacity:0.3; }
 }
 .page-title {
     font-family: 'JetBrains Mono', monospace;
     font-size: 2em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     letter-spacing: 0.5px;
     margin: 0 0 6px 0;
     line-height: 1.15;
@@ -173,7 +173,7 @@ div[data-testid="stMetricLabel"] {
 .page-subtitle {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68em;
-    color: #1e3055;
+    color: #9a9390;
     letter-spacing: 3.5px;
     text-transform: uppercase;
     margin-bottom: 28px;
@@ -186,28 +186,28 @@ div[data-testid="stMetricLabel"] {
     gap: 12px;
     margin: 52px 0 22px 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #131f38;
+    border-bottom: 1px solid #dddad5;
 }
 .section-hdr-line {
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, #131f38, transparent);
+    background: linear-gradient(90deg, #dddad5, transparent);
 }
 .section-hdr-text {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     white-space: nowrap;
 }
 .section-hdr-icon { font-size: 0.9em; }
 
 /* ── COMPOUND CARD ──────────────────────── */
 .compound-card-wrap {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 100%);
-    border: 1px solid #152242;
-    border-left: 4px solid #3b6de8;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
+    border-left: 4px solid #3d5a80;
     border-radius: 14px;
     padding: 28px 30px 22px 30px;
     margin-bottom: 28px;
@@ -222,9 +222,9 @@ div[data-testid="stMetricLabel"] {
 }
 .compound-tag {
     display: inline-block;
-    background: rgba(59,109,232,0.1);
-    border: 1px solid rgba(59,109,232,0.22);
-    color: #5b9cf6;
+    background: rgba(61,90,128,0.08);
+    border: 1px solid rgba(61,90,128,0.2);
+    color: #3d5a80;
     border-radius: 6px;
     padding: 4px 12px;
     font-size: 0.67em;
@@ -233,15 +233,15 @@ div[data-testid="stMetricLabel"] {
     text-transform: uppercase;
 }
 .compound-no-data-tag {
-    background: rgba(45,66,102,0.15);
-    border-color: rgba(45,66,102,0.3);
-    color: #2d4266;
+    background: rgba(154,147,144,0.08);
+    border-color: rgba(154,147,144,0.2);
+    color: #9a9390;
 }
 .compound-name {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.22em;
     font-weight: 700;
-    color: #7fb3fa;
+    color: #2c2c2c;
     margin: 0 0 12px 0;
     line-height: 1.3;
 }
@@ -249,16 +249,16 @@ div[data-testid="stMetricLabel"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
     line-height: 1.85;
-    color: #8fa3c4;
+    color: #555555;
     margin-bottom: 0;
 }
 .compound-description-missing {
-    color: #2d4266;
+    color: #9a9390;
     font-style: italic;
 }
 .compound-divider {
     border: none;
-    border-top: 1px solid #131f38;
+    border-top: 1px solid #dddad5;
     margin: 18px 0;
 }
 .cancer-types-label {
@@ -266,14 +266,14 @@ div[data-testid="stMetricLabel"] {
     font-size: 0.63em;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 10px;
 }
 .cancer-pill {
     display: inline-block;
-    background: rgba(167,139,250,0.07);
-    border: 1px solid rgba(167,139,250,0.18);
-    color: #a78bfa;
+    background: rgba(123,167,188,0.1);
+    border: 1px solid rgba(123,167,188,0.25);
+    color: #4a7a96;
     border-radius: 6px;
     padding: 4px 11px;
     font-size: 0.72em;
@@ -288,20 +288,20 @@ div[data-testid="stMetricLabel"] {
     margin-top: 16px;
 }
 .meta-pill {
-    background: rgba(27,55,110,0.2);
-    border: 1px solid rgba(59,109,232,0.14);
+    background: rgba(61,90,128,0.05);
+    border: 1px solid rgba(61,90,128,0.12);
     border-radius: 7px;
     padding: 6px 14px;
     font-size: 0.72em;
     font-family: 'JetBrains Mono', monospace;
-    color: #4a7ac4;
+    color: #555;
 }
-.meta-pill span { color: #7fb3fa; }
+.meta-pill span { color: #3d5a80; }
 
 /* ── KPI CARDS ──────────────────────────── */
 .kpi-outer {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 100%);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 12px;
     padding: 20px 16px 16px;
     text-align: center;
@@ -312,7 +312,7 @@ div[data-testid="stMetricLabel"] {
     font-size: 0.62em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 10px;
 }
 .kpi-value {
@@ -324,7 +324,7 @@ div[data-testid="stMetricLabel"] {
 }
 .kpi-sub {
     font-size: 0.7em;
-    color: #2d4266;
+    color: #9a9390;
     font-family: 'Inter', sans-serif;
     line-height: 1.4;
 }
@@ -343,7 +343,7 @@ div[data-testid="stMetricLabel"] {
 .verdict-wrap {
     border-radius: 14px;
     padding: 28px 30px;
-    background: #070c18;
+    background: #faf9f7;
     margin-top: 20px;
 }
 .verdict-target-label {
@@ -351,7 +351,7 @@ div[data-testid="stMetricLabel"] {
     font-size: 0.62em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 6px;
 }
 .verdict-target-name {
@@ -364,39 +364,39 @@ div[data-testid="stMetricLabel"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.88em;
     line-height: 1.85;
-    color: #8fa3c4;
+    color: #444;
 }
 .verdict-footer {
     margin-top: 16px;
     padding-top: 14px;
-    border-top: 1px solid #131f38;
+    border-top: 1px solid #dddad5;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.67em;
-    color: #1e3055;
+    color: #9a9390;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
-.verdict-footer span b { color: #2d4266; }
+.verdict-footer span b { color: #555; }
 
 /* ── AWAITING CARD ──────────────────────── */
 .await-card {
-    background: linear-gradient(135deg, #0b1527, #0d1a30);
-    border: 1px solid #152242;
-    border-left: 4px solid #3b6de8;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
+    border-left: 4px solid #3d5a80;
     border-radius: 14px;
     padding: 32px 30px;
 }
 .await-title {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1em;
-    color: #5b9cf6;
+    color: #3d5a80;
     font-weight: 700;
     margin-bottom: 14px;
     letter-spacing: 0.5px;
 }
 .await-body {
-    color: #4a6490;
+    color: #555;
     font-size: 0.87em;
     line-height: 1.9;
     margin-bottom: 22px;
@@ -407,13 +407,13 @@ div[data-testid="stMetricLabel"] {
     flex-wrap: wrap;
 }
 .feature-chip {
-    background: rgba(59,109,232,0.07);
-    border: 1px solid rgba(59,109,232,0.16);
+    background: rgba(61,90,128,0.06);
+    border: 1px solid rgba(61,90,128,0.14);
     border-radius: 8px;
     padding: 9px 16px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.71em;
-    color: #4a7ac4;
+    color: #3d5a80;
     letter-spacing: 0.3px;
 }
 
@@ -422,10 +422,10 @@ div[data-testid="stMetricLabel"] {
 
 /* selectbox */
 .stSelectbox div[data-baseweb="select"] > div {
-    background: #0b1527 !important;
-    border: 1px solid #152242 !important;
+    background: #faf9f7 !important;
+    border: 1px solid #dddad5 !important;
     border-radius: 8px !important;
-    color: #dde4f0 !important;
+    color: #2c2c2c !important;
 }
 
 /* ── SIDEBAR NAV ─────────────────────────── */
@@ -434,7 +434,7 @@ div[data-testid="stMetricLabel"] {
     font-size: 0.6em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #1e3055;
+    color: #9a9390;
     margin-bottom: 8px;
     margin-top: 4px;
 }
@@ -442,53 +442,53 @@ div[data-testid="stRadio"] > div {
     gap: 6px !important;
 }
 div[data-testid="stRadio"] label {
-    background: rgba(27,55,110,0.15) !important;
-    border: 1px solid #152242 !important;
+    background: rgba(61,90,128,0.04) !important;
+    border: 1px solid #dddad5 !important;
     border-radius: 8px !important;
     padding: 9px 14px !important;
     font-family: 'JetBrains Mono', monospace !important;
     font-size: 0.78em !important;
-    color: #4a6490 !important;
+    color: #555 !important;
     transition: all 0.2s !important;
     cursor: pointer !important;
     width: 100% !important;
 }
 div[data-testid="stRadio"] label:hover {
-    background: rgba(59,109,232,0.1) !important;
-    border-color: #3b6de8 !important;
-    color: #7fb3fa !important;
+    background: rgba(61,90,128,0.08) !important;
+    border-color: #3d5a80 !important;
+    color: #3d5a80 !important;
 }
 div[data-testid="stRadio"] label[data-checked="true"],
 div[data-testid="stRadio"] label[aria-checked="true"] {
-    background: rgba(59,109,232,0.12) !important;
-    border-color: #3b6de8 !important;
-    color: #5b9cf6 !important;
+    background: rgba(61,90,128,0.1) !important;
+    border-color: #3d5a80 !important;
+    color: #3d5a80 !important;
 }
 
 /* ── FOOTER ─────────────────────────────── */
 .site-footer {
     margin-top: 70px;
     padding: 26px 0 14px 0;
-    border-top: 1px solid #131f38;
+    border-top: 1px solid #dddad5;
     text-align: center;
 }
 .footer-disclaimer {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68em;
     letter-spacing: 1px;
-    color: #1e3055;
+    color: #9a9390;
     margin-bottom: 8px;
 }
 .footer-sub {
     font-family: 'Inter', sans-serif;
     font-size: 0.72em;
-    color: #131f38;
+    color: #c0bdb9;
 }
 
 /* ── LEARN PAGE ─────────────────────────── */
 .learn-hero {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 60%, #0b1f3a 100%);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 16px;
     padding: 48px 44px 40px 44px;
     margin-bottom: 36px;
@@ -500,14 +500,14 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     position: absolute;
     right: 36px; top: 28px;
     font-size: 6em;
-    opacity: 0.06;
+    opacity: 0.05;
     pointer-events: none;
 }
 .learn-hero-tag {
     display: inline-block;
-    background: rgba(52,211,153,0.08);
-    border: 1px solid rgba(52,211,153,0.2);
-    color: #34d399;
+    background: rgba(74,140,111,0.08);
+    border: 1px solid rgba(74,140,111,0.22);
+    color: #4a8c6f;
     border-radius: 20px;
     padding: 4px 14px;
     font-size: 0.68em;
@@ -520,7 +520,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.9em;
     font-weight: 700;
-    color: #dde4f0;
+    color: #2c2c2c;
     line-height: 1.25;
     margin-bottom: 18px;
 }
@@ -528,12 +528,12 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'Inter', sans-serif;
     font-size: 1.0em;
     line-height: 1.9;
-    color: #64748b;
+    color: #555;
     max-width: 700px;
 }
 .learn-toc {
-    background: rgba(11,21,39,0.6);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 12px;
     padding: 24px 28px;
     margin-bottom: 40px;
@@ -543,7 +543,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.68em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 16px;
 }
 .learn-toc-item {
@@ -551,21 +551,21 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     align-items: center;
     gap: 12px;
     padding: 8px 0;
-    border-bottom: 1px solid #0f1929;
+    border-bottom: 1px solid #e8e5e1;
     font-family: 'Inter', sans-serif;
     font-size: 0.88em;
-    color: #4a6490;
+    color: #555;
 }
 .learn-toc-item:last-child { border-bottom: none; }
 .learn-toc-num {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75em;
-    color: #1e3055;
+    color: #9a9390;
     min-width: 24px;
 }
 .learn-section-card {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 100%);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 14px;
     padding: 32px 34px;
     margin-bottom: 24px;
@@ -580,14 +580,14 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.62em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #1e3055;
+    color: #9a9390;
     margin-bottom: 6px;
 }
 .learn-section-title {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.1em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     margin-bottom: 16px;
     line-height: 1.3;
 }
@@ -595,20 +595,20 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
     line-height: 1.9;
-    color: #64748b;
+    color: #444;
 }
-.learn-body strong { color: #8fa3c4; }
-.learn-body em { color: #4a7ac4; font-style: normal; font-weight: 500; }
+.learn-body strong { color: #2c2c2c; }
+.learn-body em { color: #3d5a80; font-style: normal; font-weight: 500; }
 .learn-analogy {
-    background: rgba(91,156,246,0.05);
-    border: 1px solid rgba(91,156,246,0.12);
-    border-left: 3px solid #3b6de8;
+    background: rgba(61,90,128,0.04);
+    border: 1px solid rgba(61,90,128,0.12);
+    border-left: 3px solid #3d5a80;
     border-radius: 8px;
     padding: 14px 18px;
     margin: 16px 0 0 0;
     font-family: 'Inter', sans-serif;
     font-size: 0.85em;
-    color: #4a6490;
+    color: #555;
     line-height: 1.75;
 }
 .learn-analogy-label {
@@ -616,7 +616,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.7em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #3b6de8;
+    color: #3d5a80;
     margin-bottom: 6px;
 }
 .learn-glossary-grid {
@@ -626,8 +626,8 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     margin-top: 10px;
 }
 .learn-glossary-item {
-    background: rgba(11,21,39,0.7);
-    border: 1px solid #0f1929;
+    background: #f5f3f0;
+    border: 1px solid #dddad5;
     border-radius: 10px;
     padding: 16px 18px;
 }
@@ -635,32 +635,32 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     margin-bottom: 6px;
 }
 .learn-glossary-def {
     font-family: 'Inter', sans-serif;
     font-size: 0.82em;
     line-height: 1.7;
-    color: #4a6490;
+    color: #555;
 }
 .learn-step {
     display: flex;
     gap: 18px;
     align-items: flex-start;
     padding: 16px 0;
-    border-bottom: 1px solid #0f1929;
+    border-bottom: 1px solid #e8e5e1;
 }
 .learn-step:last-child { border-bottom: none; padding-bottom: 0; }
 .learn-step-num {
     width: 34px; height: 34px;
     border-radius: 50%;
-    background: rgba(59,109,232,0.12);
-    border: 1px solid rgba(59,109,232,0.25);
+    background: rgba(61,90,128,0.08);
+    border: 1px solid rgba(61,90,128,0.2);
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.8em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -671,43 +671,43 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.85em;
     font-weight: 700;
-    color: #8fa3c4;
+    color: #2c2c2c;
     margin-bottom: 5px;
 }
 .learn-step-content-body {
     font-family: 'Inter', sans-serif;
     font-size: 0.85em;
     line-height: 1.75;
-    color: #4a6490;
+    color: #555;
 }
 .learn-callout {
-    background: rgba(52,211,153,0.05);
-    border: 1px solid rgba(52,211,153,0.15);
+    background: rgba(74,140,111,0.05);
+    border: 1px solid rgba(74,140,111,0.18);
     border-radius: 10px;
     padding: 18px 22px;
     margin-top: 16px;
     font-family: 'Inter', sans-serif;
     font-size: 0.88em;
-    color: #34d399;
+    color: #3a7057;
     line-height: 1.75;
 }
-.learn-callout strong { color: #6ee7b7; }
+.learn-callout strong { color: #2d5c45; }
 .learn-warn {
-    background: rgba(245,158,11,0.05);
-    border: 1px solid rgba(245,158,11,0.2);
+    background: rgba(180,120,40,0.05);
+    border: 1px solid rgba(180,120,40,0.18);
     border-radius: 10px;
     padding: 16px 20px;
     font-family: 'Inter', sans-serif;
     font-size: 0.86em;
-    color: #d97706;
+    color: #8a5e1a;
     line-height: 1.75;
     margin-top: 16px;
 }
 
 /* ── CREDITS PAGE ───────────────────────── */
 .credits-hero {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 60%, #0c1f3a 100%);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 16px;
     padding: 52px 48px 44px 48px;
     margin-bottom: 36px;
@@ -721,14 +721,14 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     top: -60px; left: 50%;
     transform: translateX(-50%);
     width: 300px; height: 300px;
-    background: radial-gradient(circle, rgba(59,109,232,0.07) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(61,90,128,0.04) 0%, transparent 70%);
     pointer-events: none;
 }
 .credits-institute-badge {
     display: inline-block;
-    background: rgba(52,211,153,0.07);
-    border: 1px solid rgba(52,211,153,0.18);
-    color: #34d399;
+    background: rgba(74,140,111,0.07);
+    border: 1px solid rgba(74,140,111,0.2);
+    color: #4a8c6f;
     border-radius: 20px;
     padding: 5px 18px;
     font-size: 0.68em;
@@ -741,20 +741,20 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.6em;
     font-weight: 700;
-    color: #dde4f0;
+    color: #2c2c2c;
     line-height: 1.3;
     margin-bottom: 10px;
 }
 .credits-dept {
     font-family: 'Inter', sans-serif;
     font-size: 0.92em;
-    color: #4a6490;
+    color: #555;
     margin-bottom: 6px;
 }
 .credits-institute {
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 0;
 }
 .credits-team-grid {
@@ -764,8 +764,8 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     margin-bottom: 24px;
 }
 .credits-member-card {
-    background: linear-gradient(135deg, #0b1527, #0d1a30);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 14px;
     padding: 28px 22px;
     text-align: center;
@@ -773,8 +773,8 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
 .credits-member-avatar {
     width: 58px; height: 58px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #1a47c4, #0d3080);
-    border: 2px solid #3b6de8;
+    background: rgba(61,90,128,0.1);
+    border: 2px solid rgba(61,90,128,0.25);
     display: flex; align-items: center; justify-content: center;
     font-size: 1.4em;
     margin: 0 auto 16px auto;
@@ -783,21 +783,21 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9em;
     font-weight: 700;
-    color: #7fb3fa;
+    color: #2c2c2c;
     margin-bottom: 6px;
 }
 .credits-member-id {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68em;
-    color: #2d4266;
+    color: #9a9390;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
 }
 .credits-member-role {
     display: inline-block;
-    background: rgba(59,109,232,0.08);
-    border: 1px solid rgba(59,109,232,0.15);
-    color: #4a7ac4;
+    background: rgba(61,90,128,0.07);
+    border: 1px solid rgba(61,90,128,0.15);
+    color: #3d5a80;
     border-radius: 6px;
     padding: 3px 10px;
     font-size: 0.68em;
@@ -805,9 +805,9 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     letter-spacing: 1px;
 }
 .credits-guide-card {
-    background: linear-gradient(135deg, #0b1e3a, #0d2244);
-    border: 1px solid #1a3666;
-    border-left: 4px solid #3b6de8;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
+    border-left: 4px solid #3d5a80;
     border-radius: 14px;
     padding: 30px 32px;
     margin-bottom: 18px;
@@ -817,25 +817,25 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.62em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin-bottom: 8px;
 }
 .credits-guide-name {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.05em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     margin-bottom: 4px;
 }
 .credits-guide-quals {
     font-family: 'Inter', sans-serif;
     font-size: 0.82em;
-    color: #2d4266;
+    color: #9a9390;
 }
 .credits-hod-card {
-    background: linear-gradient(135deg, #101d0e, #141f0e);
-    border: 1px solid #1a3318;
-    border-left: 4px solid #34d399;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
+    border-left: 4px solid #4a8c6f;
     border-radius: 14px;
     padding: 30px 32px;
     margin-bottom: 18px;
@@ -844,7 +844,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.05em;
     font-weight: 700;
-    color: #34d399;
+    color: #4a8c6f;
     margin-bottom: 4px;
 }
 .credits-section-title {
@@ -852,10 +852,10 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.7em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #2d4266;
+    color: #9a9390;
     margin: 32px 0 16px 0;
     padding-bottom: 10px;
-    border-bottom: 1px solid #131f38;
+    border-bottom: 1px solid #dddad5;
 }
 .credits-data-row {
     display: flex;
@@ -864,30 +864,30 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     margin-top: 8px;
 }
 .credits-data-pill {
-    background: rgba(11,21,39,0.8);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 8px;
     padding: 10px 18px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.74em;
-    color: #4a6490;
+    color: #555;
 }
-.credits-data-pill span { color: #5b9cf6; display:block; font-size:0.88em; margin-top:3px; }
+.credits-data-pill span { color: #3d5a80; display:block; font-size:0.88em; margin-top:3px; }
 
 /* ── RESEARCHER PAGE ────────────────────── */
 .res-hero {
-    background: linear-gradient(135deg, #0b1527 0%, #0d1a30 50%, #0a1f3a 100%);
-    border: 1px solid #152242;
-    border-top: 3px solid #3b6de8;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
+    border-top: 3px solid #3d5a80;
     border-radius: 16px;
     padding: 48px 44px 42px 44px;
     margin-bottom: 36px;
 }
 .res-tag {
     display: inline-block;
-    background: rgba(91,156,246,0.08);
-    border: 1px solid rgba(91,156,246,0.2);
-    color: #5b9cf6;
+    background: rgba(61,90,128,0.07);
+    border: 1px solid rgba(61,90,128,0.18);
+    color: #3d5a80;
     border-radius: 20px;
     padding: 4px 14px;
     font-size: 0.67em;
@@ -900,7 +900,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.75em;
     font-weight: 700;
-    color: #dde4f0;
+    color: #2c2c2c;
     line-height: 1.25;
     margin-bottom: 16px;
 }
@@ -908,15 +908,15 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.92em;
     line-height: 1.95;
-    color: #64748b;
+    color: #555;
     max-width: 800px;
-    border-left: 3px solid #1a3666;
+    border-left: 3px solid rgba(61,90,128,0.3);
     padding-left: 20px;
     margin-top: 16px;
 }
 .res-card {
-    background: linear-gradient(135deg, #0b1527, #0d1a30);
-    border: 1px solid #152242;
+    background: #faf9f7;
+    border: 1px solid #dddad5;
     border-radius: 14px;
     padding: 32px 34px;
     margin-bottom: 22px;
@@ -926,14 +926,14 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-size: 0.6em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #1e3055;
+    color: #9a9390;
     margin-bottom: 5px;
 }
 .res-card-title {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.05em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
     margin-bottom: 18px;
     line-height: 1.3;
 }
@@ -941,33 +941,33 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.895em;
     line-height: 2.0;
-    color: #64748b;
+    color: #444;
 }
-.res-body strong { color: #8fa3c4; }
-.res-body em { color: #4a7ac4; font-style: normal; font-weight: 600; }
+.res-body strong { color: #2c2c2c; }
+.res-body em { color: #3d5a80; font-style: normal; font-weight: 600; }
 .res-body ul { padding-left: 20px; margin: 10px 0; }
 .res-body ul li { margin-bottom: 6px; }
 .res-highlight {
-    background: rgba(59,109,232,0.05);
-    border: 1px solid rgba(59,109,232,0.14);
-    border-left: 3px solid #3b6de8;
+    background: rgba(61,90,128,0.04);
+    border: 1px solid rgba(61,90,128,0.12);
+    border-left: 3px solid #3d5a80;
     border-radius: 8px;
     padding: 16px 20px;
     margin: 18px 0 0 0;
     font-family: 'Inter', sans-serif;
     font-size: 0.86em;
-    color: #4a6490;
+    color: #555;
     line-height: 1.8;
 }
-.res-highlight strong { color: #7fb3fa; }
+.res-highlight strong { color: #2c2c2c; }
 .res-formula {
-    background: rgba(11,21,39,0.9);
-    border: 1px solid #0f1929;
+    background: #f0ede9;
+    border: 1px solid #dddad5;
     border-radius: 8px;
     padding: 14px 20px;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.82em;
-    color: #34d399;
+    color: #3a7057;
     margin: 14px 0;
     line-height: 1.9;
 }
@@ -978,8 +978,8 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     margin-top: 18px;
 }
 .res-metric-box {
-    background: rgba(11,21,39,0.7);
-    border: 1px solid #0f1929;
+    background: #f5f3f0;
+    border: 1px solid #dddad5;
     border-radius: 10px;
     padding: 16px 14px;
     text-align: center;
@@ -987,7 +987,7 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
 .res-metric-name {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.68em;
-    color: #2d4266;
+    color: #9a9390;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 6px;
@@ -996,28 +996,28 @@ div[data-testid="stRadio"] label[aria-checked="true"] {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.1em;
     font-weight: 700;
-    color: #5b9cf6;
+    color: #3d5a80;
 }
 .res-metric-desc {
     font-size: 0.72em;
     font-family: 'Inter', sans-serif;
-    color: #1e3055;
+    color: #9a9390;
     margin-top: 4px;
     line-height: 1.5;
 }
 .res-ref-item {
     padding: 12px 0;
-    border-bottom: 1px solid #0f1929;
+    border-bottom: 1px solid #e8e5e1;
     font-family: 'Inter', sans-serif;
     font-size: 0.83em;
-    color: #4a6490;
+    color: #555;
     line-height: 1.7;
 }
 .res-ref-item:last-child { border-bottom: none; }
 .res-ref-num {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75em;
-    color: #3b6de8;
+    color: #3d5a80;
     margin-right: 10px;
 }
 </style>
@@ -1029,11 +1029,11 @@ warnings.filterwarnings('ignore')
 #   CONSTANTS
 # ─────────────────────────────────────────────
 FILE_PATHS = {
-    'mutation':     'mutations.csv',
-    'drug':         'GDSC.xlsx',
-    'gmt_hallmark': 'hall.gmt.txt',
-    'gmt_kegg':     'kegg.gmt.txt',
-    'descriptions': 'description.xlsx',
+    'mutation':     '/Users/roycer/Documents/data/mutations_summary_20250318.csv',
+    'drug':         '/Users/roycer/Documents/data/GDSC1_fitted_dose_response_27Oct23.xlsx',
+    'gmt_hallmark': '/Users/roycer/Documents/data/h.all.v7.x.symbols.gmt.txt',
+    'gmt_kegg':     '/Users/roycer/Documents/data/c2.cp.kegg.v7.x.symbols.gmt.txt',
+    'descriptions': '/Users/roycer/Documents/data/description_separated.xlsx',
 }
 
 TCGA_NAMES = {
@@ -1258,33 +1258,33 @@ def render_compound_card(drug_name: str, desc_dict: dict, dr_df):
             )
 
     # ── Inline styles (avoids Streamlit CSS class lookup issues) ─────────
-    CARD_BORDER = "#3b6de8" if has_desc else "#1a2744"
+    CARD_BORDER = "#3d5a80" if has_desc else "#b0aaa5"
 
     CARD_S = (
-        f'background:linear-gradient(135deg,#0b1527 0%,#0d1a30 100%);'
-        f'border:1px solid #152242;border-left:4px solid {CARD_BORDER};'
+        f'background:#faf9f7;'
+        f'border:1px solid #dddad5;border-left:4px solid {CARD_BORDER};'
         f'border-radius:14px;padding:28px 30px 24px 30px;margin-bottom:28px;'
     )
     TAG_S = (
         'display:inline-block;'
-        + ('background:rgba(59,109,232,0.1);border:1px solid rgba(59,109,232,0.22);color:#5b9cf6;'
+        + ('background:rgba(61,90,128,0.08);border:1px solid rgba(61,90,128,0.2);color:#3d5a80;'
            if has_desc else
-           'background:rgba(45,66,102,0.12);border:1px solid rgba(45,66,102,0.25);color:#2d4266;')
+           'background:rgba(154,147,144,0.08);border:1px solid rgba(154,147,144,0.2);color:#9a9390;')
         + 'border-radius:6px;padding:4px 12px;font-size:0.67em;'
           'font-family:"JetBrains Mono",monospace;letter-spacing:2px;text-transform:uppercase;'
     )
     NAME_S = (
         'font-family:"JetBrains Mono",monospace;font-size:1.22em;font-weight:700;'
-        'color:#7fb3fa;margin:12px 0 14px 0;line-height:1.3;'
+        'color:#2c2c2c;margin:12px 0 14px 0;line-height:1.3;'
     )
     DESC_S = (
         'font-family:"Inter",sans-serif;font-size:0.9em;line-height:1.85;margin:0;'
-        + ('color:#8fa3c4;' if has_desc else 'color:#2d4266;font-style:italic;')
+        + ('color:#555;' if has_desc else 'color:#9a9390;font-style:italic;')
     )
-    DIV_S  = 'height:1px;background:#131f38;margin:20px 0;'
+    DIV_S  = 'height:1px;background:#dddad5;margin:20px 0;'
     CL_S   = (
         'font-family:"JetBrains Mono",monospace;font-size:0.63em;letter-spacing:2.5px;'
-        'text-transform:uppercase;color:#2d4266;margin-bottom:10px;'
+        'text-transform:uppercase;color:#9a9390;margin-bottom:10px;'
     )
     MR_S   = 'display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;'
 
@@ -1328,10 +1328,10 @@ def section_header(icon: str, label: str):
 
 
 PLOT_CFG = dict(
-    template="plotly_dark",
+    template="plotly_white",
     paper_bgcolor='rgba(0,0,0,0)',
-    plot_bgcolor='rgba(11,21,39,0.85)',
-    font=dict(family='JetBrains Mono', color='#8fa3c4', size=11),
+    plot_bgcolor='rgba(245,243,240,0.85)',
+    font=dict(family='JetBrains Mono', color='#555555', size=11),
 )
 
 
@@ -1377,7 +1377,7 @@ def render_credits_page():
   <div class="credits-guide-name">Dr. P. Kowsalya</div>
   <div class="credits-guide-quals">M.Tech., Ph.D.</div>
   <div style="height:12px;"></div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#4a6490;line-height:1.75;">
+  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#555;line-height:1.75;">
     Department of Biotechnology<br>
     SRM Institute of Science and Technology, Ramapuram
   </div>
@@ -1389,10 +1389,10 @@ def render_credits_page():
 <div class="credits-hod-card">
   <div class="credits-guide-label">Special Thanks &nbsp; &mdash; &nbsp; Head of Department</div>
   <div class="credits-hod-name">Dr. R.V. Hemavathy</div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#2d7d5a;margin-bottom:12px;">
+  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#4a8c6f;margin-bottom:12px;">
     B.Tech., M.Tech., Ph.D. &nbsp;|&nbsp; Associate Professor &amp; HOD
   </div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#34d39988;line-height:1.75;">
+  <div style="font-family:'Inter',sans-serif;font-size:0.82em;color:#4a8c6f88;line-height:1.75;">
     Department of Biotechnology<br>
     SRM Institute of Science and Technology, Ramapuram
   </div>
@@ -1435,11 +1435,11 @@ def render_credits_page():
 
     # Disclaimer
     st.markdown("""
-<div style="margin-top:44px; background:rgba(11,21,39,0.6); border:1px solid #0f1929;
+<div style="margin-top:44px; background:#f5f3f0; border:1px solid #dddad5;
      border-radius:12px; padding:24px 28px; text-align:center;">
   <div style="font-family:'JetBrains Mono',monospace;font-size:0.65em;letter-spacing:2.5px;
-              text-transform:uppercase;color:#1e3055;margin-bottom:10px;">Academic Disclaimer</div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.85em;color:#2d4266;line-height:1.9;">
+              text-transform:uppercase;color:#9a9390;margin-bottom:10px;">Academic Disclaimer</div>
+  <div style="font-family:'Inter',sans-serif;font-size:0.85em;color:#555;line-height:1.9;">
     This project was developed as an academic submission by undergraduate students of the Department
     of Biotechnology, SRM Institute of Science and Technology, Ramapuram. The platform is intended
     solely for educational and research exploration. It does not constitute a clinical tool, a
@@ -1461,7 +1461,7 @@ def render_researcher_page():
   <div class="res-tag">📄 Technical Documentation</div>
   <div class="res-title">PathwayNet: A Biologically-Constrained<br>Neural Network for Pharmacogenomics</div>
   <div style="font-family:'JetBrains Mono',monospace;font-size:0.68em;letter-spacing:2.5px;
-              text-transform:uppercase;color:#2d4266;margin:10px 0 0 0;">
+              text-transform:uppercase;color:#9a9390;margin:10px 0 0 0;">
     Team 9 &nbsp;|&nbsp; Dept. of Biotechnology &nbsp;|&nbsp; SRM IST Ramapuram
   </div>
   <div class="res-abstract">
@@ -2247,7 +2247,7 @@ def main():
         ["🔬  Analysis", "📖  Learn", "🏛️  For Researchers", "🎓  Credits"],
         label_visibility="collapsed"
     )
-    st.sidebar.markdown('<hr style="border-color:#131f38; margin:18px 0;">', unsafe_allow_html=True)
+    st.sidebar.markdown('<hr style="border-color:#dddad5; margin:18px 0;">', unsafe_allow_html=True)
 
     if page == "📖  Learn":
         st.markdown("""
@@ -2255,7 +2255,7 @@ def main():
 <div class="page-title">UNDERSTANDING PATHWAYNET</div>
 <div class="page-subtitle">A formal, accessible guide for students and educators</div>
 """, unsafe_allow_html=True)
-        st.markdown('<hr style="border-color:#131f38; margin-bottom:32px;">', unsafe_allow_html=True)
+        st.markdown('<hr style="border-color:#dddad5; margin-bottom:32px;">', unsafe_allow_html=True)
         render_learn_page()
         return
 
@@ -2265,7 +2265,7 @@ def main():
 <div class="page-title">RESEARCHER DOCUMENTATION</div>
 <div class="page-subtitle">Full technical and methodological reference for educators and reviewers</div>
 """, unsafe_allow_html=True)
-        st.markdown('<hr style="border-color:#131f38; margin-bottom:32px;">', unsafe_allow_html=True)
+        st.markdown('<hr style="border-color:#dddad5; margin-bottom:32px;">', unsafe_allow_html=True)
         render_researcher_page()
         return
 
@@ -2275,7 +2275,7 @@ def main():
 <div class="page-title">PROJECT CREDITS</div>
 <div class="page-subtitle">SRM Institute of Science and Technology, Ramapuram &nbsp;|&nbsp; Dept. of Biotechnology</div>
 """, unsafe_allow_html=True)
-        st.markdown('<hr style="border-color:#131f38; margin-bottom:32px;">', unsafe_allow_html=True)
+        st.markdown('<hr style="border-color:#dddad5; margin-bottom:32px;">', unsafe_allow_html=True)
         render_credits_page()
         return
 
@@ -2305,7 +2305,7 @@ def main():
 <div class="page-subtitle">GDSC1 · KEGG · MSigDB Hallmark · Bio-Constrained Neural Network</div>
 """, unsafe_allow_html=True)
 
-    st.markdown('<hr style="border-color:#131f38; margin-bottom:28px;">', unsafe_allow_html=True)
+    st.markdown('<hr style="border-color:#dddad5; margin-bottom:28px;">', unsafe_allow_html=True)
 
     # ── Compound card (always visible) ────────
     render_compound_card(target_drug, desc_dict, dr_df)
@@ -2318,7 +2318,7 @@ def main():
 <div class="await-card">
   <div class="await-title">▶ &nbsp;AWAITING ANALYSIS COMMAND</div>
   <div class="await-body">
-    Compound profile loaded above. Click <strong style="color:#dde4f0;">⚡ INITIATE ANALYSIS</strong>
+    Compound profile loaded above. Click <strong style="color:#2c2c2c;">⚡ INITIATE ANALYSIS</strong>
     in the sidebar to build a sparse biologically-constrained neural network using KEGG &amp;
     MSigDB Hallmark pathway definitions, then run counterfactual CRISPR-like perturbation modelling.
   </div>
@@ -2412,22 +2412,22 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
     kpis = [
         ("Pearson R  (Bio)", f"{pcc_bio:.3f}",
          f"Δ {validity:+.3f} vs control",
-         "#34d399" if pcc_bio > 0.3 else "#f59e0b" if pcc_bio > 0.15 else "#ef4444"),
+         "#4a8c6f" if pcc_bio > 0.3 else "#b07d2a" if pcc_bio > 0.15 else "#c0392b"),
         ("Pearson R  (Control)", f"{pcc_rand:.3f}",
          "Randomised baseline",
-         "#8fa3c4"),
+         "#888"),
         ("Spearman ρ", f"{scc_bio:.3f}",
          "Rank-order correlation",
-         "#34d399" if scc_bio > 0.3 else "#f59e0b"),
+         "#4a8c6f" if scc_bio > 0.3 else "#b07d2a"),
         ("R² Score", f"{r2_bio:.3f}",
          "Variance explained",
-         "#34d399" if r2_bio > 0.2 else "#f59e0b" if r2_bio > 0.05 else "#ef4444"),
+         "#4a8c6f" if r2_bio > 0.2 else "#b07d2a" if r2_bio > 0.05 else "#c0392b"),
         ("MAE", f"{mae_bio:.3f}",
          "ln IC50 units",
-         "#ef4444" if mae_bio > 1.5 else "#f59e0b" if mae_bio > 1.0 else "#34d399"),
+         "#c0392b" if mae_bio > 1.5 else "#b07d2a" if mae_bio > 1.0 else "#4a8c6f"),
         ("RMSE", f"{rmse_bio:.3f}",
          "ln IC50 units",
-         "#ef4444" if rmse_bio > 1.8 else "#f59e0b" if rmse_bio > 1.2 else "#34d399"),
+         "#c0392b" if rmse_bio > 1.8 else "#b07d2a" if rmse_bio > 1.2 else "#4a8c6f"),
     ]
     for col, (label, val, sub, color) in zip(cols, kpis):
         with col:
@@ -2441,14 +2441,14 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
 
     # Validity badge
     if validity > 0.05:
-        vbc, vbt = "#34d399", "✅ &nbsp;BIOLOGICAL STRUCTURE VALIDATED"
-        vbg = "rgba(52,211,153,0.05)"
+        vbc, vbt = "#4a8c6f", "✅ &nbsp;BIOLOGICAL STRUCTURE VALIDATED"
+        vbg = "rgba(74,140,111,0.05)"
     elif validity > 0:
-        vbc, vbt = "#f59e0b", "⚠️ &nbsp;MARGINAL BIOLOGICAL SIGNAL"
-        vbg = "rgba(245,158,11,0.05)"
+        vbc, vbt = "#b07d2a", "⚠️ &nbsp;MARGINAL BIOLOGICAL SIGNAL"
+        vbg = "rgba(176,125,42,0.05)"
     else:
-        vbc, vbt = "#ef4444", "❌ &nbsp;NO BIOLOGICAL ADVANTAGE DETECTED"
-        vbg = "rgba(239,68,68,0.05)"
+        vbc, vbt = "#c0392b", "❌ &nbsp;NO BIOLOGICAL ADVANTAGE DETECTED"
+        vbg = "rgba(192,57,43,0.05)"
 
     st.markdown(f"""
 <div class="validity-badge" style="background:{vbg}; border:1px solid {vbc}25;
@@ -2471,28 +2471,28 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
             x=['Random Control', 'Biological\nPathway Net'],
             y=[pcc_rand, pcc_bio],
             marker=dict(
-                color=['#1a3266', '#1d4ed8'],
-                line=dict(color=['#3b6de8', '#34d399'], width=2),
+                color=['#c5d4e8', '#3d5a80'],
+                line=dict(color=['#9ab0cc', '#4a8c6f'], width=2),
                 opacity=[0.85, 1.0],
             ),
             text=[f"R = {pcc_rand:.3f}", f"R = {pcc_bio:.3f}"],
             textposition='outside',
-            textfont=dict(size=13, color='#dde4f0'),
+            textfont=dict(size=13, color='#2c2c2c'),
             width=[0.4, 0.4],
         ))
         fig_bar.add_hline(
-            y=0.3, line_dash="dot", line_color="#f59e0b", line_width=1.2,
+            y=0.3, line_dash="dot", line_color="#b07d2a", line_width=1.2,
             annotation_text="R = 0.3", annotation_position="top right",
-            annotation_font=dict(color="#f59e0b", size=9, family="JetBrains Mono")
+            annotation_font=dict(color="#b07d2a", size=9, family="JetBrains Mono")
         )
         fig_bar.update_layout(
             **PLOT_CFG,
             title=dict(text="<b>Structure Validity</b>",
-                       font=dict(size=12, color='#4a6490')),
+                       font=dict(size=12, color='#555')),
             height=380,
             margin=dict(l=20, r=20, t=55, b=20),
             yaxis=dict(range=[0, max(pcc_rand, pcc_bio) * 1.35],
-                       gridcolor='#131f38', title='Pearson R',
+                       gridcolor='#dddad5', title='Pearson R',
                        title_font=dict(size=11)),
             xaxis=dict(showgrid=False),
             showlegend=False,
@@ -2509,9 +2509,9 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
             x=y_te, y=preds_bio, mode='markers',
             marker=dict(
                 color=abs_res,
-                colorscale=[[0, '#34d399'], [0.4, '#fbbf24'], [1.0, '#ef4444']],
+                colorscale=[[0, '#4a8c6f'], [0.4, '#b07d2a'], [1.0, '#c0392b']],
                 size=9, opacity=0.82,
-                line=dict(width=0.5, color='rgba(255,255,255,0.12)'),
+                line=dict(width=0.5, color='rgba(0,0,0,0.08)'),
                 colorbar=dict(
                     title=dict(text="│Residual│",
                                font=dict(size=9, family='JetBrains Mono')),
@@ -2526,14 +2526,14 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
         hi = max(y_te.max(), preds_bio.max())
         fig_scat.add_trace(go.Scatter(
             x=[lo, hi], y=[lo, hi], mode='lines',
-            line=dict(color='rgba(255,255,255,0.1)', width=1.5, dash='dot'),
+            line=dict(color='rgba(0,0,0,0.1)', width=1.5, dash='dot'),
             hoverinfo='skip', showlegend=False
         ))
         m, b   = np.polyfit(y_te, preds_bio, 1)
         x_fit  = np.linspace(y_te.min(), y_te.max(), 120)
         fig_scat.add_trace(go.Scatter(
             x=x_fit, y=m * x_fit + b, mode='lines',
-            line=dict(color='#5b9cf6', width=2.5),
+            line=dict(color='#3d5a80', width=2.5),
             name=f"Fit  R={pcc_bio:.3f}",
             hoverinfo='skip'
         ))
@@ -2542,12 +2542,12 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
             title=dict(
                 text=f"<b>Actual vs Predicted ln IC50</b>"
                      f"  ·  R={pcc_bio:.3f}  ρ={scc_bio:.3f}  R²={r2_bio:.3f}",
-                font=dict(size=11, color='#4a6490')
+                font=dict(size=11, color='#555')
             ),
             height=380,
             margin=dict(l=30, r=70, t=55, b=30),
-            xaxis=dict(title='Actual ln IC50',   gridcolor='#0f1929', zeroline=False),
-            yaxis=dict(title='Predicted ln IC50', gridcolor='#0f1929', zeroline=False),
+            xaxis=dict(title='Actual ln IC50',   gridcolor='#dddad5', zeroline=False),
+            yaxis=dict(title='Predicted ln IC50', gridcolor='#dddad5', zeroline=False),
             legend=dict(font=dict(size=10), bgcolor='rgba(0,0,0,0)'),
             showlegend=True,
         )
@@ -2593,7 +2593,7 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
             margin=dict(l=20, r=30, t=40, b=50),
             xaxis=dict(
                 title='ln IC50  ( ← more sensitive  |  more resistant → )',
-                gridcolor='#0f1929', zeroline=False,
+                gridcolor='#dddad5', zeroline=False,
                 title_font=dict(size=11)
             ),
             yaxis=dict(showgrid=False, tickfont=dict(size=10.5)),
@@ -2619,7 +2619,7 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
         pw.replace('KEGG_', '').replace('HALLMARK_', '').replace('_', ' ')
         for pw in top_pws
     ]
-    bar_clr = ['#ef4444' if v > 0 else '#3b82f6' for v in top_scores]
+    bar_clr = ['#c0392b' if v > 0 else '#3d5a80' for v in top_scores]
 
     fig_resist = go.Figure()
     fig_resist.add_trace(go.Bar(
@@ -2627,20 +2627,20 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
         y=pw_labels[::-1],
         orientation='h',
         marker=dict(color=bar_clr[::-1], opacity=0.88,
-                    line=dict(color='rgba(255,255,255,0.05)', width=1)),
+                    line=dict(color='rgba(0,0,0,0.05)', width=1)),
         text=[f"{v:+.3f}" for v in top_scores[::-1]],
         textposition='outside',
-        textfont=dict(size=10, color='#8fa3c4'),
+        textfont=dict(size=10, color='#555'),
         hovertemplate="%{y}<br>Δ Activation: %{x:.4f}<extra></extra>"
     ))
-    fig_resist.add_vline(x=0, line_width=1.5, line_color='rgba(255,255,255,0.12)')
+    fig_resist.add_vline(x=0, line_width=1.5, line_color='rgba(0,0,0,0.12)')
     fig_resist.update_layout(
         **PLOT_CFG,
         height=600,
         margin=dict(l=20, r=100, t=30, b=60),
         xaxis=dict(
             title='Activation Delta  (Resistant − Sensitive)',
-            gridcolor='#0f1929', zeroline=False,
+            gridcolor='#dddad5', zeroline=False,
             title_font=dict(size=11)
         ),
         yaxis=dict(showgrid=False, tickfont=dict(size=10.5)),
@@ -2648,10 +2648,10 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
         annotations=[
             dict(x=max(top_scores) * 0.55, y=-0.065, xref='x', yref='paper',
                  text="▶  MORE RESISTANT", showarrow=False,
-                 font=dict(color='#ef4444', size=9, family='JetBrains Mono')),
+                 font=dict(color='#c0392b', size=9, family='JetBrains Mono')),
             dict(x=min(top_scores) * 0.55, y=-0.065, xref='x', yref='paper',
                  text="◀  MORE SENSITIVE", showarrow=False,
-                 font=dict(color='#3b82f6', size=9, family='JetBrains Mono')),
+                 font=dict(color='#3d5a80', size=9, family='JetBrains Mono')),
         ]
     )
     st.plotly_chart(fig_resist, use_container_width=True)
@@ -2677,7 +2677,7 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
         cf_pred = scaler.inverse_transform(cf_pred_s.numpy())[0][0]
 
     delta        = baseline_pred - cf_pred
-    c_border     = "#34d399" if delta > 0 else "#ef4444"
+    c_border     = "#4a8c6f" if delta > 0 else "#c0392b"
     status_icon  = "✅" if delta > 0 else "⚠️"
     status_label = "VALID THERAPEUTIC TARGET" if delta > 0 else "NON-VIABLE — ESCAPE REDUNDANCY"
     pw_display   = target_pw.replace('KEGG_', '').replace('HALLMARK_', '').replace('_', ' ')
@@ -2694,8 +2694,8 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
 
     p1, p2, p3 = st.columns(3, gap="medium")
     for col, label, val, sub, color in [
-        (p1, "Baseline ln IC50",    f"{baseline_pred:.3f}", "Pre-perturbation (most resistant cell)", "#dde4f0"),
-        (p2, "Post-CRISPR ln IC50", f"{cf_pred:.3f}",       "After pathway knockout",                 "#dde4f0"),
+        (p1, "Baseline ln IC50",    f"{baseline_pred:.3f}", "Pre-perturbation (most resistant cell)", "#2c2c2c"),
+        (p2, "Post-CRISPR ln IC50", f"{cf_pred:.3f}",       "After pathway knockout",                 "#2c2c2c"),
         (p3, "Sensitivity Δ",       f"{delta:+.4f}",        "Positive = sensitised to drug",          c_border),
     ]:
         with col:
@@ -2716,7 +2716,7 @@ def perform_analysis(target_drug, mut_matrix, dr_df, pathways, desc_dict):
       <div class="verdict-target-label">Top Resistance Pathway · Knockout Target</div>
       <div class="verdict-target-name" style="color:{c_border};">{html_lib.escape(pw_display)}</div>
       <div style="font-family:'JetBrains Mono',monospace; font-size:0.62em; letter-spacing:3px;
-                  text-transform:uppercase; color:#2d4266; margin-bottom:6px;">Verdict</div>
+                  text-transform:uppercase; color:#9a9390; margin-bottom:6px;">Verdict</div>
       <div class="verdict-conclusion">
         <strong style="color:{c_border};">{status_label}.</strong><br>
         {conclusion}
